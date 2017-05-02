@@ -1,0 +1,6 @@
+RabbitMQ is a post box, a post office and a postman.
+
+The major difference between RabbitMQ and the post office is that it doesn't deal with paper, intead it accepts, stores and forwards binary blobs of data - MESSAGE
+
+Producing means nothing more than sending. A program that sends messages is a producer.
+
