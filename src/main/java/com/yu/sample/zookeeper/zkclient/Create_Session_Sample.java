@@ -33,12 +33,12 @@ public class Create_Session_Sample {
 //		zkClient.delete("");
 //		zkClient.deleteRecursive("");
 
-//		¶ÁÈ¡Êı¾İ
+//		è¯»å–æ•°æ®
 		List<String> list = zkClient.getChildren("/zk-zy-book");
 		System.out.println("read data list: " + list);
 		
 		
-//		Êı¾İ¸Ä±ä
+//		æ•°æ®æ”¹å˜
 		String delPath = "/zk-book/del";
 		zkClient.subscribeDataChanges(delPath, new IZkDataListener(){
 
@@ -59,6 +59,9 @@ public class Create_Session_Sample {
 		zkClient.writeData(delPath, "456");
 		Thread.sleep(1000);
 		zkClient.delete(delPath);
+		
+//		æ£€æŸ¥èŠ‚ç‚¹æ˜¯å¦å­˜åœ¨
+//		boolean exists(final String path)
 		
 		
 		
